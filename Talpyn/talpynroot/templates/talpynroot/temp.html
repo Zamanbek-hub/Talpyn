@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css\temp.css' %}">
+    <title>Document</title>
+    <script type="text/javascript" src="{% static 'js\temp.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- <div class="container-fluid page-2">
+        <div class="container-fluid page-2-part-1">
+            <p class="page-2-part-1-topic"> Изучай новое</p>
+        </div>
+        <div class="row frame">
+            <div class="col frame frame-1">
+                <img src="{% static 'img\Frame 1.png' %}" alt="..." class="img-fluid frame-1-photo"  style="">
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 2.png' %}" alt="..." class="img-fluid frame-2-photo"  style="">
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 3.png' %}" alt="..." class="img-fluid frame-3-photo"  style="">
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 9.png' %}" alt="..." class="img-fluid frame-4-photo"  style="">
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 10.png' %}" alt="..." class="img-fluid frame-5-photo"  style="">
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 11.png' %}" alt="..." class="img-fluid frame-6-photo"  style="">
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 12.png' %}" alt="..." class="img-fluid frame-7-photo"  style="">
+            </div>
+
+        </div>
+        
+
+       
+
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+              <li data-target="#multi-item-example" data-slide-to="1"></li>
+              <li data-target="#multi-item-example" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner" role="listbox">
+          
+              
+              <div class="carousel-item active">
+                <div class="row block">
+                    
+                    <div class="col-md-3">
+                        
+                        <img class="card-img-top"
+                        src="{% static 'img\Rectangle 1.png' %}" alt="Card image cap">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Курс</h5>
+                            <p class="block-1-text">Курс немесе сабақ атауы</p>
+                            <p class="block-1-price-1">25000 тг</p>
+                            <p class="block-1-price-2">5000 тг</p>
+                            <p class="block-1-lesson">50 сағат | 12 дәріс</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        
+                        <img class="card-img-top"
+                        src="{% static 'img\Rectangle 2.png' %}" alt="Card image cap">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Курс</h5>
+                            <p class="block-2-text">Курс немесе сабақ атауы</p>
+                            <p class="block-2-price-1">25000 тг</p>
+                            <p class="block-2-price-2">5000 тг</p>
+                            <p class="block-2-lesson">30 минут | 12 дәріс</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                       
+                        <img class="card-img-top"
+                        src="{% static 'img\Rectangle 1.png' %}" alt="Card image cap">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Курс</h5>
+                            <p class="block-3-text">Курс немесе сабақ атауы</p>
+                            <p class="block-3-price-1">25000 тг</p>
+                            <p class="block-3-price-2">5000 тг</p>
+                            <p class="block-3-lesson">50 сағат | 12 дәріс</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                       
+                        <img class="card-img-top"
+                        src="{% static 'img\Rectangle 2.png' %}" alt="Card image cap">
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Курс</h5>
+                            <p class="block-4-text">Курс немесе сабақ атауы</p>
+                            <p class="block-4-price-1">25000 тг</p>
+                            <p class="block-4-price-2">5000 тг</p>
+                            <p class="block-4-lesson">30 минут| 12 дәріс</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+             
+              <div class="carousel-item">
+                    <div class="row block">
+                        
+                        <div class="col-md-3">
+                            
+                            <img class="card-img-top"
+                            src="{% static 'img\Rectangle 1.png' %}" alt="Card image cap">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-1-text">Курс немесе сабақ атауы</p>
+                                <p class="block-1-price-1">25000 тг</p>
+                                <p class="block-1-price-2">5000 тг</p>
+                                <p class="block-1-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            
+                            <img class="card-img-top"
+                            src="{% static 'img\Rectangle 2.png' %}" alt="Card image cap">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">30 минут | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        
+                            <img class="card-img-top"
+                            src="{% static 'img\Rectangle 1.png' %}" alt="Card image cap">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-3-text">Курс немесе сабақ атауы</p>
+                                <p class="block-3-price-1">25000 тг</p>
+                                <p class="block-3-price-2">5000 тг</p>
+                                <p class="block-3-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        
+                            <img class="card-img-top"
+                            src="{% static 'img\Rectangle 2.png' %}" alt="Card image cap">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-4-text">Курс немесе сабақ атауы</p>
+                                <p class="block-4-price-1">25000 тг</p>
+                                <p class="block-4-price-2">5000 тг</p>
+                                <p class="block-4-lesson">30 минут| 12 дәріс</p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+          
+              <div class="carousel-item">
+                    <div class="row block">
+                        
+                        <div class="col-md-3">
+                            
+                            <img class="card-img-top"
+                            src="{% static 'img\Rectangle 1.png' %}" alt="Card image cap">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-1-text">Курс немесе сабақ атауы</p>
+                                <p class="block-1-price-1">25000 тг</p>
+                                <p class="block-1-price-2">5000 тг</p>
+                                <p class="block-1-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            
+                            <img class="card-img-top"
+                            src="{% static 'img\Rectangle 2.png' %}" alt="Card image cap">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">30 минут | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        
+                            <img class="card-img-top"
+                            src="{% static 'img\Rectangle 1.png' %}" alt="Card image cap">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-3-text">Курс немесе сабақ атауы</p>
+                                <p class="block-3-price-1">25000 тг</p>
+                                <p class="block-3-price-2">5000 тг</p>
+                                <p class="block-3-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        
+                            <img class="card-img-top"
+                            src="{% static 'img\Rectangle 2.png' %}" alt="Card image cap">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-4-text">Курс немесе сабақ атауы</p>
+                                <p class="block-4-price-1">25000 тг</p>
+                                <p class="block-4-price-2">5000 тг</p>
+                                <p class="block-4-lesson">30 минут| 12 дәріс</p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+         
+          
+            </div>
+
+            <div class="controls-top">
+                <a class="prev" href="#multi-item-example" data-slide="prev"><img src="{% static 'img\Component 8.png' %}" alt="..." class="img-fluid prev-photo"  style=""><i class="fas fa-chevron-left"></i></a>
+                <a class="next" href="#multi-item-example" data-slide="next"><img src="{% static 'img\COmponent 8.png' %}" alt="..." class="img-fluid next-photo"  style=""><iclass="fas fa-chevron-right"></i></a>
+              </div>
+           
+          
+          </div>
+        
+    </div> -->
+      
+</body>
+</html>

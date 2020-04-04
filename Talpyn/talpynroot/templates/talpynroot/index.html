@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <link rel="stylesheet" href="{% static 'css\temp.css' %}">
+    <script type="text/javascript" src="{% static 'js\temp.js' %}"></script>
+
+    <title>Document</title>
+   
+   
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class = "container-fluid page-1" >    
+        <div class="page-1-back">
+            <div class = "container-fluid header" style="height: 100px;"> 
+                <img src="{% static 'img\talpyn.png' %}" alt="..." class="img-fluid logo"  >
+                <p class="text textnearlogo ">Онлайн мектеп<br> №1 бейне редакциялау </p>
+                <p class="text textcontacts ">Наши контакты:<br> +7701 660 4219 <br> <a href="">salem@talpyn.kz</a></p>
+            </div>
+            <div class="row firstpage">
+                <div class="col">
+                    <section class="firstpage-1">
+                        <div class="firstpage-1-part-1">
+                            <p class="firstpage-1-part-text-1">
+                                Как стать блогером и<br> научиться снимать и <br> монтировать видео
+                            </p>
+                        </div>
+                        <div class="firstpage-1-part-2">
+                            <p class="firstpage-1-part-text-2">
+                                Практика монтажа уже в 1-й день обучения
+                            </p>
+                        </div>
+                        <div class="firstpage-1-part-3">
+                            <input class="btn  firstpage-1-part-button" type="submit" value="Смотреть цены">
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="firstpage-2-part" >
+                        <div class="firstpage-2-part-photo">
+                            <div class="firstpage-2-part-photo-1">
+                                    <img src="{% static 'img\Group 14.png' %}" alt="..." class="img-fluid firstpage-2-part-logo" >
+                            </div>
+                            <div class="firstpage-2-part-photo-2">
+                                    <p class="firstpage-2-part-photo-2-text">Узнай все</p>
+                            </div>
+                            <div class="firstpage-2-part-photo-3">
+                                <p class="firstpage-2-part-photo-3-text">о курсе</p>
+                            </div>
+                            <div class="firstpage-2-part-2">
+                                <p>Посмотрите чему вы научитесь о курсе</p> 
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid page-2">
+        <div class="container-fluid page-2-part-1">
+            <p class="page-2-part-1-topic"> Изучай новое</p>
+        </div>
+        <div class="row frame">
+            <div class="col frame frame-1">
+                <img src="{% static 'img\Frame 1.png' %}" alt="..." class="img-fluid frame-1-photo"  >
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 2.png' %}" alt="..." class="img-fluid frame-2-photo"  >
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 3.png' %}" alt="..." class="img-fluid frame-3-photo"  >
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 9.png' %}" alt="..." class="img-fluid frame-4-photo" >
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 10.png' %}" alt="..." class="img-fluid frame-5-photo"  >
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 11.png' %}" alt="..." class="img-fluid frame-6-photo" >
+            </div>
+            <div class="col frame">
+                <img src="{% static 'img\Frame 12.png' %}" alt="..." class="img-fluid frame-7-photo" >
+            </div>
+
+        </div>
+        <div class="top-content lessons-1">
+            <div class="container-fluid">
+                <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img1">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img2">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img3">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img4">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img5">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img6">
+                            <div class="block-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img7">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img8">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev prev" href="#carousel-example" role="button" data-slide="prev">
+                       
+                        <img src="{% static 'img\Component 8.png' %}" alt="..." class="img-fluid prev-photo"  style="">
+                    </a>
+                    <a class="carousel-control-next next" href="#carousel-example" role="button" data-slide="next">
+                       
+                        <img src="{% static 'img\Component 8.png' %}" alt="..." class="img-fluid prev-photo"  style="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="top-content lessons-2">
+            <div class="container-fluid">
+                <div id="carousel-2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img1">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img2">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img3">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img4">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img5">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img6">
+                            <div class="block-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img7">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img8">
+                            <div class="block-body">
+                                <h5 class="block-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev prev" href="#carousel-2" role="button" data-slide="prev">
+                       
+                        <img src="{% static 'img\Component 8.png' %}" alt="..." class="img-fluid prev-photo"  style="">
+                    </a>
+                    <a class="carousel-control-next next" href="#carousel-2" role="button" data-slide="next">
+                       
+                        <img src="{% static 'img\Component 8.png' %}" alt="..." class="img-fluid prev-photo"  style="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class = "container-fluid page-3" >    
+        <div class="page-3-back">
+           
+            <div class="row ">
+                <div class="col">
+                    <section class="firstpage-1">
+                            <h5 class="page-3-part-topic">Автор курса</h5>
+                            <h5 class="page-3-part-autor">Ықылас</h5>
+                            <p class="page-3-part-text-1">
+                                Профессиональный монтажер, оператор и режиссер <br> руководитель видеопродакшн студии ЫҚЫЛАС MEDIA
+                            </p>
+                        
+                            <p class="page-3-part-text-2">
+                                Большая команда профессионалов 
+                            </p>
+
+                            <p class="page-3-part-text-3">
+                                5 лет в индустрии, 1000 реализованных проектов 
+                            </p>
+                       
+                          
+                    </section>
+                </div>
+                <div class="col">
+                    
+                        
+                        <img src="{% static 'img\image 1.png' %}" alt="..." class="img-fluid page-3-logo" >
+                           
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "container-fluid page-4" >    
+            
+            <p class="page-2-part-1-topic"> Станьте студентом <br> Talpyn Production</p>
+            <p class="page-2-part-1-descrip"> Практика монтажа уже 1-й день обучения</p>
+    
+        <div class="row page-4-frame">
+            <div class="col page-4-frame-1">
+                <img src="{% static 'img\Group 16.png' %}" alt="..." class="img-fluid "  >
+                <p class="page-4-frame-1-text">Видео <br> монтажер</p>
+            </div>
+            <div class="col page-4-frame-2">
+                <img src="{% static 'img\Group 11.png' %}" alt="..." class="img-fluid "  >
+                <p class="page-4-frame-2-text">VFX <br> художник</p>
+            </div>
+            <div class="col page-4-frame-3">
+                <img src="{% static 'img\Group 15.png' %}" alt="..." class="img-fluid "  >
+                <p class="page-4-frame-3-text">Графический <br> дизайнер</p>
+            </div>
+            <div class="col page-4-frame-4">
+                <img src="{% static 'img\Group 10.png' %}" alt="..." class="img-fluid " >
+                <p class="page-4-frame-4-text">Контент <br> менеджер</p>
+            </div>
+            <div class="col page-4-frame-5">
+                <img src="{% static 'img\Group 10.png' %}" alt="..." class="img-fluid "  >
+                <p class="page-4-frame-5-text">Сценарист</p>
+            </div>
+            <div class="col page-4-frame-6">
+                <img src="{% static 'img\Group 10.png' %}" alt="..." class="img-fluid " >
+                <p class="page-4-frame-6-text">Кто то еще</p>
+            </div>
+        </div>
+        <div class="page-4-part-3">
+            <input class="btn  page-4-part-3-value" type="submit" value="Смотреть цены">
+        </div>
+    </div>
+
+    <div class = "container-fluid page-5" >
+        <div class="page-5-desc">
+            <h1 class=" text-center mt-4 mb-0 page-5-body-topic">Название урока</h1>
+            <p class="page-5-text">25 практических  уроков <br> Продолжительность уроков от 15 до 40 минут</p>
+        </div>
+        <div class="page-5-body">
+            
+
+            <div class="row text-center text-lg-left page-5-photos">
+
+                <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
+                <a href="#" class="d-block mb-4 h-80">
+                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                    </a>
+                <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                 <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
+                <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                    </a>
+                    <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                         <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    </p>
+                        
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
+                <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                    </a>
+                    <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                         <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
+                <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                    </a>
+                    <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                         <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
+                <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                    </a>
+                    <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                         <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
+                <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                    </a>
+                    <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                         <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
+                <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                    </a>
+                    <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                         <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                        </a>
+                        <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                            <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                            <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                             <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                            <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                            <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                            <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                            <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                        </p>
+                </div>
+                
+            </div>
+        </div>
+<!-- /.container -->
+    </div>
+
+    <div class = "container-fluid page-6" >
+        <div class="page-6-back">
+            <div class="row ">
+                <div class="col">
+                    <section class="page-6-part-1">
+                            <h5 class="page-6-part-topic">Почему выбирают <br> TALPYN PRODUCTION</h5>
+                            <p class="page-6-part-text">
+                                <img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Более 4500 довольных учеников 
+                                <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Только практическая информация 
+                                <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Ценность знаний выше стоимости 
+                                <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Постояные мастер-классы от преподавателей
+                                <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Сертификат по окнчанию обучения
+                                <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Возможность работать с командой TALPYN PRODUCTION
+                            </p>
+                        
+                            <p class="page-6-part-text-2">
+                                Большая команда профессионалов 
+                            </p>
+
+                            <p class="page-6-part-text-3">
+                                5 лет в индустрии, 1000 реализованных проектов 
+                            </p>
+                       
+                          
+                    </section>
+                </div>
+                <div class="col">
+                    
+                        
+                        <img src="{% static 'img\Group 23.png' %}" alt="..." class="img-fluid page-5-logo" >
+                           
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class = "container-fluid page-7" >    
+        <div class="page-7-back">
+            <section class="col-12 page-7-body">
+                <div class="row">
+                    <div class="col">
+                    
+                                <h5 class="page-7-part-topic">Обучение <br> на Онлайн платформе</h5>
+                                <p class="page-7-part-text">
+                                    <img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Доступ к занятием 24/7
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Обучение с любого города 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Обратная связь от преподавателей
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Ссылка на программы для монтажа 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Видеоматериалы, эффекты, <br>   &nbsp; &nbsp; &nbsp;инструкция в одном месте 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Курс по Adobe Premiere
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt=""><strong>Вам нужен только смартфон</strong> 
+                                </p>    
+                        
+                            
+                    
+                    </div>
+                    <div class="col">
+                        
+                            <div class="page-7-background">
+                                <img src="{% static 'img\image 7.png' %}" alt="..." class="img-fluid page-7-logo" >
+                                <img src="{% static 'img\Union.svg' %}" alt="..." class="img-fluid page-7-union" >
+                            </div>
+                    
+                    </div>
+                </div>
+            </section>
+            <section class="col-12 page-7-body page-7-body-2" style="margin-top:672px; margin-left:75px;">
+                    <div class="row">
+                        <div class="col">
+                            
+                            <div class="page-7-background">
+                                <img src="{% static 'img\image 8.png' %}" alt="..." class="img-fluid page-7-logo" >
+                                <img src="{% static 'img\Union_2.svg' %}" style="left:90px;" alt="..." class="img-fluid page-7-union" >
+                            </div>
+                    
+                        </div>
+
+                        <div class="col">
+                        
+                                    <h5 class="page-7-part-topic">Комфортное обучение</h5>
+                                    <p class="page-7-part-text">
+                                        <img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Доступ к занятием 24/7
+                                        <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Обучение с любого города 
+                                        <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Обратная связь от преподавателей
+                                        <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Ссылка на программы для монтажа 
+                                        <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Видеоматериалы, эффекты, <br>   &nbsp; &nbsp; &nbsp;инструкция в одном месте 
+                                        <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Курс по Adobe Premiere
+                                        <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt=""><strong>Вам нужен только смартфон</strong> 
+                                    </p>    
+                            
+                                
+                        
+                        </div>
+                        
+                    </div>
+            </section>
+
+            <section class="col-12 page-7-body page-7-body-3" style="margin-top:650px;">
+                <div class="row">
+                    
+
+                    <div class="col">
+                    
+                                <h5 class="page-7-part-topic">Комфортное обучение</h5>
+                                <p class="page-7-part-text">
+                                    <img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Доступ к занятием 24/7
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Обучение с любого города 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Обратная связь от преподавателей
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Ссылка на программы для монтажа 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Видеоматериалы, эффекты, <br>   &nbsp; &nbsp; &nbsp;инструкция в одном месте 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Курс по Adobe Premiere
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt=""><strong>Вам нужен только смартфон</strong> 
+                                </p>    
+                        
+                            
+                    
+                    </div>
+
+                    <div class="col">
+                        
+                        <div class="page-7-background">
+                            <img src="{% static 'img\image 12.png' %}" alt="..." class="img-fluid page-7-logo" >
+                            <img src="{% static 'img\Union.svg' %}" style="left:150px; margin-top:50px;" alt="..." class="img-fluid page-7-union" >
+                        </div>
+                
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="col-12 page-7-body page-7-body-4" style="margin-top: 656px;  margin-left: 75px;">
+                <div class="row">
+                    <div class="col">
+                        
+                        <div class="page-7-background">
+                            <img src="{% static 'img\image 14.png' %}" alt="..." class="img-fluid page-7-logo" >
+                            <img src="{% static 'img\Union_2.svg' %}" style="left:200px; transform: rotate(105.11deg); top:-100px;" alt="..." class="img-fluid page-7-union" >
+                        </div>
+                
+                    </div>
+
+                    <div class="col">
+                    
+                                <h5 class="page-7-part-topic">Комфортное обучение</h5>
+                                <p class="page-7-part-text">
+                                    <img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Доступ к занятием 24/7
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Обучение с любого города 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Обратная связь от преподавателей
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Ссылка на программы для монтажа 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Видеоматериалы, эффекты, <br>   &nbsp; &nbsp; &nbsp;инструкция в одном месте 
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Курс по Adobe Premiere
+                                    <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt=""><strong>Вам нужен только смартфон</strong> 
+                                </p>    
+                        
+                            
+                    
+                    </div>
+                    
+                </div>
+        </section>
+            
+               
+        </div>
+    </div>
+
+    <div class = "container-fluid page-8" > 
+        <div class="page-8-back">
+            <section class="firstpage-1">
+                <h5 class="page-3-part-topic">Реальные результаты</h5>
+                <div class="row ">
+                    <div class="col-4">
+                     
+                    
+                    </div>
+                    <div class="col-4">
+                       
+                    </div>
+                    <div class="col-4">
+                       
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- <div class = "container-fluid page-9" > 
+        <h5 class="page-3-part-topic">Реальные результаты</h5>
+        
+    </div> -->
+
+    <div class="container-fluid page-9">
+        <div class="container">
+          <div class="row padding text-center" style="margin-top: 100px;">
+            <div class="col-12">
+              <h2>Our Contacts</h2>
+            </div>
+            <div class="col-12 social padding" style="weight:100%; height: 100px;">
+              <a href="#" ><img class="img-fluid  znak znak-1" src="{% static 'img\Image 17.png' %}" alt=""></i></a>
+              <a href="#" ><img class="img-fluid  znak znak-2" src="{% static 'img\Image 18.png' %}" alt=""></a>
+              <a href="#" ><img class="img-fluid  znak znak-3" src="{% static 'img\Image 16.png' %}" alt=""></a>
+              <a href="#" ><img class="img-fluid  znak znak-4" src="{% static 'img\Image 15.png' %}" alt=""></a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid page-10">
+        <p class="page-10-text">Использование текстов, изображений и видео с данной страницы без разрешения запрещено. По вопросам заказа и оплаты курсов звоните по телефону +7 000 00 00 с 9:00 до 21:00 в ПН-ВС. г. Алматы, улица Масанчи, 00, офис 000. Служба поддержки: salem@talpyn.kz</p>
+    </footer>
+
+
+
+   
+      
+
+          <!--/.Carousel Wrapper-->
+</body>
+</html>
+
