@@ -1,45 +1,50 @@
-
+.page-1,.page-2,.page-3,.page-4,.page-5,.page-6,.page-7.page-8,.page-9,.page-10{
+    position: relative;
+}
 .page-1{
     background: #FFE600;
     height: 780px;
-    position: absolute;
-    width: 1439px;
+    width: 100%;
+    max-width: 1920px;
+  
     
 }
 
 .page-1-back{
     position: absolute;
-    width: 1400.57px;
-    height: 771.91px;
+    width: 97%;
+    height: 95%;
     left: 20px;
-    top: -7px;
+    top: 20px;
     background-image: url("/static/img/Background.png");
     background-size: 100%;
 }
 
 .header{
+    width: 95%;
     height: 100px;
 }
+
 .img-thumbnail{background-color:transparent;}
 
 .logo{
-    margin-left: 75px;
+    left: 5.2%;
     margin-top: 40px;
-    width:190px;
+    width:13.2%;
     height:44.13px;
 }
 
 .textnearlogo{
     position: absolute;
-    width: 190px;
+    width: 16.2%;
     height: 38px;
-    left:320px;
+    left:23%;
     top: 40px;
     font-family: PT Sans Caption;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 1.35vw;
+    /* line-height: 17px; */
 /* or 142% */
 
     display: flex;
@@ -49,16 +54,16 @@
 
 .textcontacts{
     position: absolute;
-    width: 120px;
+    width: 15.4%;
     height: 63px;
-    left: 1245px;
+    left: 84%;
     top: 40px;
 
     font-family: PT Sans Caption;
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
+    font-weight: bold;  
+    font-size: 1.55vw;
+    /* line-height: 21px; */
 /* or 150% */
 
     text-align: right;
@@ -66,6 +71,9 @@
     color: #000000;
 }
 
+.firstpage-1-part-text-3{
+    top:-300px;
+}
 
 
 .firstpage{
@@ -76,7 +84,7 @@
     height:570px;
 }
 .firstpage-1, .firstpage-1-part-text-1, .firstpage-1-part-text-2{
-    width:550px;
+    width:70%;
 }
 
 .firstpage-1-part-1{
@@ -92,18 +100,20 @@
 .firstpage-1-part-3{
     height: 100px;
 }
-
+.firstpage-1-part-text-3{
+    display: none;
+}
 .firstpage-1-part-text-1{
     position: absolute;
     height: 138px;
     left: 5.21%;
     right: 56.6%;
-    top: 252px;
+    top: 212px;
 
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 3vw;
     line-height: 46px;
     /* or 128% */
 }
@@ -115,9 +125,9 @@
     padding: 2px 41px;
 
     position: absolute;
-    width: 218px;
+    width: 14,3%;
     height: 50px;
-    left: 75px;
+    left:  5.21%;
     top: 480px;
 
     background: #FFFFFF;
@@ -136,7 +146,7 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.7vw;
     line-height: 46px;
     /* identical to box height, or 192% */
 
@@ -146,20 +156,20 @@
 
 .firstpage-2-part-photo-1{
     position: absolute;
-    width: 70px;
+    width: 10%;
     height: 70px;
 }
 
 .firstpage-2-part-logo{
     position: absolute;
-    width: 60px;
+    /* width: 90%; */
     height: 60px;
     left: 25px;
     top: 10px;
 }
 
 .firstpage-2-part-photo-2{
-    width: 271px;
+    width: 45%;
     height: 50px;
     background-color:#FFE600;
     position: absolute;
@@ -168,7 +178,7 @@
 }
 
 .firstpage-2-part-photo-3{
-    width: 171px;
+    width: 28%;
     height: 50px;
     background-color:#FFE600;
     position: absolute;
@@ -177,7 +187,7 @@
 
 .firstpage-2-part-photo-3-text, .firstpage-2-part-photo-2-text{
     position: absolute;
-    width: 232px;
+    width: 90%;
     height: 98px;
     top: 0px;
 
@@ -194,12 +204,12 @@
 }
 
 .firstpage-2-part-photo-3-text{
-    font-size: 46px;
+    font-size: 3.2vw;
     left: 5px;
 }
 
 .firstpage-2-part-photo-2-text{
-    font-size: 46px;
+    font-size:3.7vw ;
     left:5px;
 }
 
@@ -209,26 +219,29 @@
 
 .firstpage-2-part-photo{
     position: absolute; 
-    width: 630px;
+    width: 85%;
+    max-width: 85%;
     height: 400px;
     top: 170px;
-    background-size:100%;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-image: url("/static/img/Rectangle 7.png");
     
 }
 
 .firstpage-2-part-2{
     position: absolute;
-    width: 365px;
+    width: 70%;
     height: 26px;
-    left: 133px;
-    top: 420px;
+    left: 20%;
+    top: 400px;
 
     font-family: PT Sans Caption;
     font-style: normal;
     font-weight: bold;
+    /* font-size: 1.3vw; */
     font-size: 18px;
-    line-height: 26px;
+    line-height: 2vw;
     /* identical to box height, or 144% */
 
     display: flex;
@@ -242,28 +255,30 @@
 
 /* page-2 */
 .page-2{
-    position: absolute;
-    width: 1439px;
-    height: 1210px;
-    margin-top:780px;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    /* margin-top:780px; */
+    max-width: 1920px;
 }
 .page-3{
-    position: absolute;
-    width:1439px;
-    height: 669px;
-    margin-top:1970px;
+    position: relative;
+    width:100%;
+    height: 676px;
+    /* margin-top:1970px; */
     background-color: #FFE600;
+    max-width: 1920px;
 }
 .page-2-part-1{
     height: 70px;
 }
 
-.page-2-part-1-topic{
+.page-4-part-1-topic{
     
     position: absolute;
     left: 30.9%;
     right: 30.9%;
-    top: 60px;
+    top: 30px;
 
     font-family: Open Sans;
     font-style: normal;
@@ -281,13 +296,18 @@
     height: 60px;
 }
 
+.page-2-row{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
 .frame-1-photo,.frame-2-photo, .frame-3-photo, .frame-4-photo, .frame-5-photo, .frame-6-photo, .frame-7-photo{
     display: flex;
     flex-direction: row;
     /* padding: 13px 18px; */
     height: 30px;
     position: absolute;
-    width: 175px;
+    width:12.5vw;
     left:7px;
 
     border: 1px solid #000000;
@@ -426,9 +446,10 @@
 
 .card-body{
     background-color: #FFE600;
-    margin-top:180px;
+    margin-top:0px;
+    margin-left: 1.08vw;
     height: 170px;
-    width: 304px;
+    width: 301px;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -532,7 +553,6 @@
 /* } */ */
 
 
-
 .next-photo{
     width:70px;
     height:70;
@@ -542,8 +562,8 @@
 
 .page-3-back{
     position: absolute;
-    width: 1400.57px;
-    height: 600px;
+    width: 97%;
+    height: 95%;
     left: 20px;
     top:26px;
     background-image: url("/static/img/Group 45.png");
@@ -553,16 +573,16 @@
     
     position: absolute;
     height: 46px;
-    /* left: 5.21%; */
+    left: 7.8%;
     left:75px;
     right: 64.03%;
     top: 64px;
-    width: 500px;
+    width: 35vw;
 
     font-family: Open Sans;
     font-style: normal;
     font-weight: 800;
-    font-size: 64px;
+    font-size:5.5vw;
     line-height: 46px;
     /* identical to box height, or 72% */
 
@@ -580,7 +600,7 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 3vw;
     line-height: 46px;
     /* identical to box height, or 128% */
 
@@ -598,7 +618,7 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1.7vw;
     line-height: 31px;
     /* or 129% */
 
@@ -620,24 +640,25 @@
     height:775px;
 }
 
-.page-2{
-    height: 570px;
-}
 
 .page-3-logo{
     position: absolute;
-    width: 732px;
+    width: 86%;
     height: 820px;
     left: 10px;
     top: -170px;
+    max-width: 86%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
 .page-4{
-    position: absolute;
-    width:1439px;
+    position: relative;
+    width:100%;
     height: 646px;
-    margin-top: 2639px;
+    /* margin-top: 2639px; */
+    max-width: 1920px;
 }
 
 .page-4-frame-1, .page-4-frame-2, .page-4-frame-3, .page-4-frame-4, .page-4-frame-5, .page-4-frame-6{
@@ -649,12 +670,12 @@
 }
 
 .page-4-frame{
-    width:1100px;
+    width:74%;
     margin-left: 176px;
     margin-right:162.47px;
 }
 
-.page-2-part-1-descrip{
+.page-4-part-1-descrip{
     position: absolute;
     height: 46px;
     left: 35.83%;
@@ -678,7 +699,7 @@
 
 .page-4-frame-1-text, .page-4-frame-2-text, .page-4-frame-3-text, .page-4-frame-4-text, .page-4-frame-5-text, .page-4-frame-6-text{
     position: absolute;
-    width: 89px;
+    width: 30%;
     height: 38px;
     margin-right: 20px;
     margin-top:14px;
@@ -710,7 +731,7 @@
     position: absolute;
     width: 218px;
     height: 50px;
-    left: 611px;
+    left: 43%;
     top: 501px;
 
     background: #FFE600;
@@ -719,9 +740,11 @@
 }
 
 .page-4-part-3-value{
-    position: static;
-    left: 18.81%;
-    right: 18.81%;
+    margin:auto;
+    display:block;
+    /* position: static; */
+    /* left: 20.81%;
+    right: 18.81%; */
     top: 4%;
     bottom: 4%;
 
@@ -732,7 +755,7 @@
     line-height: 46px;
     /* identical to box height, or 256% */
 
-    display: flex;
+    /* display: flex; */
     align-items: center;
     text-align: center;
 
@@ -749,15 +772,16 @@
 
 
 .page-5{
-    position: absolute;
-    width:1439px;
-    height: 1452px;
-    margin-top: 3285px;
+    position: relative;
+    width:100%;
+    height: auto;
+    /* margin-top: 3285px; */
+    max-width: 1920px;
     
 }
 
 .page-5-photo-mdb{
-    width:1439px;
+    width:100%;
 }
 
 figure{
@@ -782,6 +806,7 @@ figure{
     font-weight: normal;
     font-size: 15px;
     line-height: 31px;
+    text-align: left;
     /* or 194% */
 
 
@@ -846,28 +871,9 @@ figure{
 }
 
 .page-5-desc{
-    margin-bottom: 100px;
+    margin-left:10px;
+    display:block;
     height: 80px;
-}
-
-.page-6{
-    position: absolute;
-    width: 1439px;
-    height: 669px;
-    left: 0px;
-    top: 4737px;
-
-    background: #000000;
-}
-
-.page-6-back{
-    position: absolute;
-    width: 1400.57px;
-    height: 600px;
-    left: 20px;
-    top: 41px;
-    background-image: url("/static/img/Group 50png.png");
-    background-size: 100%;
 }
 
 .page-5-logo{
@@ -877,6 +883,29 @@ figure{
     left: 157.5px;
     top: 157px;
  }
+
+.page-6{
+    position: relative;
+    width: 100%;
+    max-width:2000px;
+    height: 669px;
+    left: 0px;
+    /* top: 4737px; */
+
+    background: #000000;
+}
+
+.page-6-back{
+    position: absolute;
+    width: 96%;
+    height: 95%;
+    left: 20px;
+    top: 41px;
+    background-image: url("/static/img/Group 50png.png");
+    background-size: 100%;
+}
+
+
 
  .page-6-part-1{
     height:570px;
@@ -931,11 +960,12 @@ figure{
  }
 
  .page-7{
-    position: absolute;
-    width: 1439px;
+    position: relative;
+    width: 100%;
+    max-width:2000px;
     height: 2643px;
     left: 0px;
-    top: 5406px;
+    /* top: 5406px; */
     
     
  }
@@ -995,8 +1025,8 @@ figure{
 
  .page-7-logo{
     position: absolute;
-    width: 550px;
-    height: 420px;
+    width: 100%;
+    height: 100%;
     left: -20px;
     top: -20px;
     
@@ -1013,29 +1043,111 @@ figure{
  }
 
  .page-8{
-    position: absolute;
-    width: 1439px;
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
     height: 807px;
     left: 1px;
-    top: 8099px;
+    /* top: 8099px; */
     
     background: #FFE600;
  }
 
- .page-8-body{
+ .page-8-back{
     position: absolute;
-    width: 1407.01px;
+    width: 97%;
     height: 756.83px;
     left: 20px;
     top: 20px;
-    background-image: url("/static/img/Group 58.png");
+    background-size: 100%;
+    background-image: url("/static/img/Group 100png.png");
+ }
+
+ .page-8-body{
+    width:95%;
+    height: 750px;
+    
+ }
+
+ .page-8-part-topic{
+    position: absolute;
+    height: 46px;
+    left: 23.06%;
+    right: 23.19%;
+    top: 69px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    /* identical to box height, or 128% */
+    
+    text-align: center;
+    
+    color: #000000;
+ }
+
+ .page-8-col-1{
+    position: absolute;
+    width: 221px;
+    height: 112px;
+    left: 20%;
+    top: 190px;
+ }
+
+ .page-8-col-2{
+    position: absolute;
+    width: 287px;
+    height: 131px;
+    left: 20%;
+    top: 377px;
+    
+ }
+
+ .page-8-col-1-2{
+     left:14%;
+ }
+
+ .page-8-col-1-3{
+     left:16%;
+ }
+
+
+
+ .page-8-text{
+    position: absolute;
+    width: 497px;
+    height: 98px;
+    left: 32.5%;
+    top: 602px;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    
+    color: #000000;
+ }
+
+ .page-8-union{
+    position: absolute;
+    width: 679px;
+    height: 156px;
+    left: 25%;
+    top: 560px;
+    
+    transform: matrix(-1, 0, 0, 1, 0, 0);
  }
 
  .page-9{
-    position: absolute;
-    width: 1407.01px;
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
     height: 443.17px;
-    top: 8906px;
+    /* top: 8906px; */
  }
 
 .znak-1,.znak-2,.znak-3,.znak-4{
@@ -1048,33 +1160,35 @@ figure{
 }
 
 .znak-1{
-    left: 293px;
+    top:-5px;
+    left:28%;
 }
 .znak-2{
-    left: 446px;
+    left:40.5%;
 }
 .znak-3{
-    left: 556px;
+    left: 52%;
 }
 .znak-4{
-    left: 666px;
+    left:64%;
 }
 
 .page-10{
-    position: absolute;
-    width: 1439px;
+    position: relative
+    width: 100%;
+    max-width:2000px;
     height: 217px;
     left: 0px;
-    top: 9276px;
+    /* top: 9276px; */
 
     background: #000000;
 }
 
 .page-10-text{
     position: absolute;
-    width: 665px;
+    width: 60%;
     height: 76px;
-    left: 387px;
+    left: 23%;
     top: 72px;
 
     font-family: Open Sans;
@@ -1086,4 +1200,18 @@ figure{
 
     color: #FFFFFF;
 }
+
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
  

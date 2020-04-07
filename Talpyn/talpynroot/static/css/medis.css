@@ -1,0 +1,594 @@
+@media screen and (min-width: 2000px) {
+    .textnearlogo{
+       font-size: 12px;
+    }
+    .textcontacts{
+        font-size: 14px;
+    }
+    .firstpage-1-part-text-1{
+        font-size: 36px;
+    }
+    .firstpage-1-part-text-2{
+        font-size: 24px;
+    }
+    .firstpage-2-part-photo-2-text, .firstpage-2-part-photo-3-text{
+        font-size: 48px;
+    }
+    .firstpage-2-part-2{
+        font-size: 18px;
+    }
+
+    
+    .page-3-part-text-1,.page-3-part-text-2, .page-3-part-text-3{
+        font-size: 24px;
+    }
+    .page-3-part-topic{
+        font-size: 64px;
+    }
+    .page-3-part-autor{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .firstpage-2-part-2{
+        top: 310px;
+        font-size:12px;
+    }
+    .firstpage-1-part-text-2{
+        top: 350px;
+    }
+    .firstpage-2-part-photo{
+        height: 300px;
+    }
+    .firstpage-1-part-button{
+        top:410px;
+    }
+    .firstpage-1-part-text-1{
+       
+        top: 212px;
+        line-height: 46px;
+        /* or 128% */
+    }
+    .firstpage-2-part-logo{
+        /* width: 90%; */
+        height: 50px;
+        left: 20px;
+        top: 8px;
+    }
+    .page-4-part-1-descrip{
+        font-size: 18px;
+        line-height: 40px;
+        top:140px;
+        /* identical to box height, or 192% */
+        color: #000000;
+    }
+    .page-7-background{
+        position: absolute;
+        width: 450px;
+        height: 320px;
+        left: 15px;
+        
+    
+        background: #FFE600;
+     }
+    .page-7-union{
+        width: 303.75px;
+        height: 126.37px;
+        left: 134px;
+        top: 14px;
+        
+        transform: rotate(-6.11deg);
+    }
+    .page-7-part-topic{
+        font-size: 34px;
+        line-height: 40px;
+     }
+    .page-7-part-text{
+        margin-top:95px;
+        font-size: 22px;
+        line-height: 24px;
+     }
+    .page-8-text{
+        width: 497px;
+        height: 98px;
+    
+        font-size: 32px;
+        line-height: 47px;
+     }
+    .page-8-union{
+        width: 600px;
+        height: 146px;
+        left: 27%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .firstpage-2-part-2{
+        top: 270px;
+        font-size:12px;
+    }
+    .firstpage-1-part-text-1{
+       
+        top: 192px;
+        line-height: 32px;
+        /* or 128% */
+    }
+    .firstpage-1-part-text-2{
+    
+        top: 304px;
+        line-height: 36px;
+    }
+    .firstpage-1-part-button{
+        top:360px;
+    }
+    .page-1{
+        height:500px;
+    }
+    .firstpage-2-part-logo{
+        /* width: 90%; */
+        height: 40px;
+        left: 15px;
+        top: 6px;
+    }
+    .page-3-part-text-1,.page-3-part-text-2, .page-3-part-text-3{
+    
+        width: 509px;
+        height: 184px;
+        top:210px;
+        left: 80px; 
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .page-3-part-autor{
+        top: 130px;
+    }
+    .page-3-part-text-2{
+        top:280px;
+    }
+    .page-3-part-text-3{
+        top:320px;
+    }
+    .page-3{
+        height: 500px;
+    }
+    .page-3-logo{
+        height: 640px;
+    }
+    .page-4-part-1-descrip{
+        font-size: 14.85px;
+        line-height: 40px;
+        top:140px;
+        left:33%;
+        /* identical to box height, or 192% */
+        color: #000000;
+    }
+    .page-6-part-text{
+        font-size: 20px;
+        line-height: 36px;
+     }
+     .page-6{
+        height: 600px;
+     }
+    .page-8-text{
+        
+        left:25%;
+        
+     }
+    .page-8-union{
+        width: 600px;
+        height: 146px;
+        left: 18%;
+    }
+    .page-8-col-1{
+        width: 161px;
+        height: 100px;
+        left: 20%;
+        top: 190px;
+    }
+    .page-8-col-1-2{
+        left:13%;
+    }
+   
+    .page-8-col-1-3{
+        left:15.5%;
+    }
+    .firstpage-2-part-photo{
+        top: 70px;
+    }
+    .firstpage-1-part-text-1{
+        top: 100px;
+    }
+    .firstpage-1-part-text-2{
+        top:200px;
+    }
+    .firstpage-1-part-button{
+        top:250px;
+    }
+    .znak-1{
+        top:-5px;
+        left:19%;
+    }
+    .znak-2{
+        left:37.5%;
+    }
+    .znak-3{
+        left: 53%;
+    }
+    .znak-4{
+        left:68%;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .firstpage-2-part-2{
+        top:250px;
+    }
+    .page-3-part-text-1,.page-3-part-text-2, .page-3-part-text-3{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .firstpage-2-part-2{
+        top: 230px;
+        font-size:12px;
+    }
+    .firstpage-2-part-logo{
+        /* width: 90%; */
+        height: 40px;
+        left: 15px;
+        top: 6px;
+    }
+    .firstpage-1-part-text-2{
+    
+        top: 198px;
+        line-height: 36px;
+    }
+    .firstpage-1-part-button{
+        top:240px;
+    }
+    .page-4-part-1-topic{
+        left: 30.9%;
+        top: 30px;
+        font-size: 30px;
+    }
+   
+    
+}
+
+@media screen and (max-width: 767px) {
+    /* .page-1-back{
+        visibility: hidden;
+    }
+    .firstpage-1-part-1{
+        visibility:visible;
+    }
+    .firstpage-1-part-2{
+        visibility:visible;
+    }
+    .firstpage-2-part-2{
+        visibility:visible;
+    }
+    .firstpage-1-part-text-1{
+        top:0px;
+    } */
+    /* .firstpage{
+        display: none;
+    } */
+
+    .page-3, .page-6, .page-7, .page-8, .page-9, .page-10{
+        display:none;
+    }
+
+    .page-1-back .firstpage-2-part-photo{display: none;}
+    .page-1-back .firstpage-2-part-photo-2{display: none;}
+    .page-1-back .firstpage-2-part-photo-3{display: none;}
+    .page-1-back .firstpage-2-part-2{display: none;}
+    .page-1-back .firstpage-1-part-3{display: none;}
+    .header .textnearlogo{display: none;}
+    .header .textcontacts{display: none;}
+    .page-1-part-2{display:none;}
+
+    .page-1-back .logo{
+        top:30px;
+        width:40.2%;
+        height:35px;
+        left:20px;
+    }
+
+    .page-1-part-1{
+        width:97%;
+        height: 95%;
+    }
+    
+    .page-1-back{
+        background: #FFE600;
+    }
+
+    .firstpage-1-part-text-1{
+        visibility: hidden;
+    }
+    .firstpage-1-part-text-1::after{
+        content: 'Получи онлайн \a образование \a уже сегодня';
+        visibility: visible;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top:-90px;
+        bottom: 0%;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 40px;
+/* or 111% */
+        color: #000000;
+    }
+
+    .firstpage-1-part-text-2{
+        visibility: hidden;
+    }
+    .firstpage-1-part-text-2::after{
+        content: 'Востребованные профессии, которые \a не преподают в университете';
+        visibility: visible;
+        position: absolute;
+        width: 90%;
+        height: 50px;
+        left: 1%;
+        top: -30px;
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 25px;
+        
+        color: #000000;
+        
+    }
+
+    /* .firstpage-1-part-button::after{
+        content: "whatever";
+    } */
+
+    .firstpage-1-part-text-3{
+        display: flex;
+        /* position: relative; */
+        top:250px;
+        position: absolute;
+        width: 335px;
+        height: 25px;
+        left: 6%;
+        
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+        text-decoration-line: underline;
+
+        color: #000000;
+    }
+
+    .search-container button {
+        position: absolute;
+        width: 53px;
+        height: 49px;
+        left:90%;
+        top: 391px;
+        color:black;
+        /* background: #000000; */
+        border-radius: 0px 10px 10px 0px;
+        cursor: pointer;
+    }
+
+    .search-container .fa-search{
+        background-color: black;
+    }
+
+    input[type=text] {
+        position: absolute;
+        width: 90%;
+        height: 49px;
+        left: 5%;
+        top: 391px;
+        
+        
+        background: #FFFFFF;
+        border-radius: 10px;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .topnav .search-container button:hover {
+        background: #ccc;
+    }
+
+    .topnav .search-container{
+        top:300px;
+        height: 40px;
+    }
+
+
+
+    .page-2 .page-2-part-1{
+        display: none;
+     }
+
+    .page-2 .page-2-row{
+        position: relative;
+        background: #FFE600;
+        width:100%;
+        left:0px;
+    }
+
+
+    .page-4-frame{
+        display: none;
+    }
+
+    .page-4-part-3{
+        display:none;
+    }
+
+    .page-4{
+        background: #FFE600;
+    }
+
+    .page-4-part-1-topic{
+        visibility: hidden;
+    }
+
+    .page-4-part-1-topic::after{
+        visibility: visible;
+        content: 'На курсе \aвы получите навыки';
+
+        font-size: 24px;
+        line-height: 30px;
+        top:-100px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page-4-part-1-descrip{
+        visibility: hidden;
+    }
+
+    .page-4-part-1-descrip::after{
+        visibility: visible;
+        content: 'Базовые навыки для старта';
+    }
+
+    .page-4-frame-mobile-1, .page-4-frame-mobile-2{
+        left:10%;
+    }
+    
+    .page-11{
+        position: relative;
+        width: 100%;
+        height: 776px;
+        background: #FFE600;
+    }
+
+    .page-11-back{
+        height: 570px;
+    }
+
+    .page-11-part-1{
+        height: 200px;;
+    }
+
+    .page-11-part-2{
+        height: 200px;;
+    }
+
+    .page-11-part-3{
+        height: 200px;;
+    }
+
+    .page-11-part-1-text-1{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 108px;
+        bottom: 2.5%;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        /* or 125% */
+
+        /* display: flex; */
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
+    }
+
+    .page-11-part-1-text-2{
+        position: absolute;
+        width: 313px;
+        height: 18px;
+        left: 31px;
+        top: 103px;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #000000;
+
+    }
+
+    .page-11-part-2{
+        /* position: absolute; */
+        width: 172px;
+        height: 172px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        top: 216px;
+    }
+
+    .page-11-part-3{
+        text-align: center;
+    }
+
+    .page-11-part-3-text-1{
+        position: absolute;
+        width: 313px;
+        height: 62px;
+        left: 31px;
+        top: 416px;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        /* text-align: center; */
+
+        color: #000000;
+    }
+
+
+
+}
+
+@media screen and (min-width: 767px){
+    .firstpage-1-part-text-3{
+        display: none;
+    }
+    .search-container{
+        display:none;
+    }
+    .page-4-frame-mobile-1{
+        display: none;
+    }
+    .page-4-frame-mobile-2{
+        display: none;
+    }
+    .page-11{
+        display: none;
+    }
+}
+ 

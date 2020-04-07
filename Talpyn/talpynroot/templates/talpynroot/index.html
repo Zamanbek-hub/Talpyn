@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0" style='overflow-x:hidden;'>
     {% load static %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'css\style.css' %}">
     <link rel="stylesheet" href="{% static 'css\temp.css' %}">
+    <link rel="stylesheet" href="{% static 'css\medis.css' %}">
     <script type="text/javascript" src="{% static 'js\temp.js' %}"></script>
 
     <title>Document</title>
@@ -25,8 +26,14 @@
                 <p class="text textnearlogo ">Онлайн мектеп<br> №1 бейне редакциялау </p>
                 <p class="text textcontacts ">Наши контакты:<br> +7701 660 4219 <br> <a href="">salem@talpyn.kz</a></p>
             </div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Что ниюудь будем изучать?" name="search">
+                  <button type="submit"><i class="fa fa-search black"></i></button>
+                </form>
+              </div>
             <div class="row firstpage">
-                <div class="col">
+                <div class="col page-1-part-1">
                     <section class="firstpage-1">
                         <div class="firstpage-1-part-1">
                             <p class="firstpage-1-part-text-1">
@@ -37,13 +44,17 @@
                             <p class="firstpage-1-part-text-2">
                                 Практика монтажа уже в 1-й день обучения
                             </p>
+                            <p class="firstpage-1-part-text-3">
+                                Перейти в каталог
+                            </p>
+                            <!-- <p class="firstpage-1-part-text-3">Перейти в каталог</!--> 
                         </div>
                         <div class="firstpage-1-part-3">
                             <input class="btn  firstpage-1-part-button" type="submit" value="Смотреть цены">
                         </div>
                     </section>
                 </div>
-                <div class="col">
+                <div class="col page-1-part-2">
                     <section class="firstpage-2-part" >
                         <div class="firstpage-2-part-photo">
                             <div class="firstpage-2-part-photo-1">
@@ -70,8 +81,8 @@
         <div class="container-fluid page-2-part-1">
             <p class="page-2-part-1-topic"> Изучай новое</p>
         </div>
-        <div class="row frame">
-            <div class="col frame frame-1">
+        <div class="row frame page-2-row">
+            <div class="col frame ">
                 <img src="{% static 'img\Frame 1.png' %}" alt="..." class="img-fluid frame-1-photo"  >
             </div>
             <div class="col frame">
@@ -99,58 +110,8 @@
                 <div id="carousel-example" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner row w-100 mx-auto" role="listbox">
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img1">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
-                                <p class="block-2-text">Курс немесе сабақ атауы</p>
-                                <p class="block-2-price-1">25000 тг</p>
-                                <p class="block-2-price-2">5000 тг</p>
-                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img2">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
-                                <p class="block-2-text">Курс немесе сабақ атауы</p>
-                                <p class="block-2-price-1">25000 тг</p>
-                                <p class="block-2-price-2">5000 тг</p>
-                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img3">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
-                                <p class="block-2-text">Курс немесе сабақ атауы</p>
-                                <p class="block-2-price-1">25000 тг</p>
-                                <p class="block-2-price-2">5000 тг</p>
-                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img4">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
-                                <p class="block-2-text">Курс немесе сабақ атауы</p>
-                                <p class="block-2-price-1">25000 тг</p>
-                                <p class="block-2-price-2">5000 тг</p>
-                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img5">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
-                                <p class="block-2-text">Курс немесе сабақ атауы</p>
-                                <p class="block-2-price-1">25000 тг</p>
-                                <p class="block-2-price-2">5000 тг</p>
-                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img6">
-                            <div class="block-body">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2slider2"  alt="img1">
+                            <div class="card-body">
                                 <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
@@ -159,9 +120,59 @@
                             </div>
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img2">
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img3">
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img4">
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img5">
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img6">
+                            <div class="card-body">
+                                <h5 class="card-title  ">Курс</h5>
+                                <p class="block-2-text">Курс немесе сабақ атауы</p>
+                                <p class="block-2-price-1">25000 тг</p>
+                                <p class="block-2-price-2">5000 тг</p>
+                                <p class="block-2-lesson">50 сағат | 12 дәріс</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img7">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -170,8 +181,8 @@
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img8">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -196,8 +207,8 @@
                     <div class="carousel-inner row w-100 mx-auto" role="listbox">
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img1">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -206,8 +217,8 @@
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img2">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -216,8 +227,8 @@
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img3">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -226,8 +237,8 @@
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img4">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -236,8 +247,8 @@
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2"  alt="img5">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -246,7 +257,7 @@
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img6">
-                            <div class="block-body">
+                            <div class="card-body">
                                 <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
@@ -256,8 +267,8 @@
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img7">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -266,8 +277,8 @@
                         </div>
                         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                             <img src="{% static 'img\Rectangle 2.png' %}" class="img-fluid mx-auto d-block slider2" alt="img8">
-                            <div class="block-body">
-                                <h5 class="block-title">Курс</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Курс</h5>
                                 <p class="block-2-text">Курс немесе сабақ атауы</p>
                                 <p class="block-2-price-1">25000 тг</p>
                                 <p class="block-2-price-2">5000 тг</p>
@@ -291,7 +302,7 @@
     <div class = "container-fluid page-3" >    
         <div class="page-3-back">
            
-            <div class="row ">
+            <div class="row">
                 <div class="col">
                     <section class="firstpage-1">
                             <h5 class="page-3-part-topic">Автор курса</h5>
@@ -322,39 +333,56 @@
         </div>
     </div>
     
-    <div class = "container-fluid page-4" >    
+    <div class = "container-fluid page-4" >     
             
-            <p class="page-2-part-1-topic"> Станьте студентом <br> Talpyn Production</p>
-            <p class="page-2-part-1-descrip"> Практика монтажа уже 1-й день обучения</p>
+            <p class="page-4-part-1-topic"> Станьте студентом <br> Talpyn Production</p>
+            <p class="page-4-part-1-descrip"> Практика монтажа уже 1-й день обучения</p>
     
         <div class="row page-4-frame">
             <div class="col page-4-frame-1">
-                <img src="{% static 'img\Group 16.png' %}" alt="..." class="img-fluid "  >
-                <p class="page-4-frame-1-text">Видео <br> монтажер</p>
+                <img src="{% static 'img\Group 22.png' %}" alt="..." class="img-fluid "  >
             </div>
             <div class="col page-4-frame-2">
-                <img src="{% static 'img\Group 11.png' %}" alt="..." class="img-fluid "  >
-                <p class="page-4-frame-2-text">VFX <br> художник</p>
+                <img src="{% static 'img\Group 21.png' %}" alt="..." class="img-fluid "  >
             </div>
             <div class="col page-4-frame-3">
-                <img src="{% static 'img\Group 15.png' %}" alt="..." class="img-fluid "  >
-                <p class="page-4-frame-3-text">Графический <br> дизайнер</p>
+                <img src="{% static 'img\Group 20.png' %}" alt="..." class="img-fluid "  >
             </div>
             <div class="col page-4-frame-4">
-                <img src="{% static 'img\Group 10.png' %}" alt="..." class="img-fluid " >
-                <p class="page-4-frame-4-text">Контент <br> менеджер</p>
+                <img src="{% static 'img\Group 19.png' %}" alt="..." class="img-fluid " >
             </div>
             <div class="col page-4-frame-5">
-                <img src="{% static 'img\Group 10.png' %}" alt="..." class="img-fluid "  >
-                <p class="page-4-frame-5-text">Сценарист</p>
+                <img src="{% static 'img\Group 46.png' %}" alt="..." class="img-fluid "  >
             </div>
             <div class="col page-4-frame-6">
-                <img src="{% static 'img\Group 10.png' %}" alt="..." class="img-fluid " >
-                <p class="page-4-frame-6-text">Кто то еще</p>
+                <img src="{% static 'img\Group 47.png' %}" alt="..." class="img-fluid " >
             </div>
         </div>
         <div class="page-4-part-3">
             <input class="btn  page-4-part-3-value" type="submit" value="Смотреть цены">
+        </div>
+
+        <div class="row page-4-frame-mobile-1">
+            <div class="col page-4-frame-1">
+                <img src="{% static 'img\Group 22.png' %}" alt="..." class="img-fluid "  >
+            </div>
+            <div class="col page-4-frame-2">
+                <img src="{% static 'img\Group 21.png' %}" alt="..." class="img-fluid "  >
+            </div>
+            <div class="col page-4-frame-3">
+                <img src="{% static 'img\Group 20.png' %}" alt="..." class="img-fluid "  >
+            </div>
+        </div>
+        <div class="row page-4-frame-mobile-2">
+            <div class="col page-4-frame-4">
+                <img src="{% static 'img\Group 19.png' %}" alt="..." class="img-fluid " >
+            </div>
+            <div class="col page-4-frame-5">
+                <img src="{% static 'img\Group 46.png' %}" alt="..." class="img-fluid "  >
+            </div>
+            <div class="col page-4-frame-6">
+                <img src="{% static 'img\Group 47.png' %}" alt="..." class="img-fluid " >
+            </div>
         </div>
     </div>
 
@@ -369,18 +397,18 @@
             <div class="row text-center text-lg-left page-5-photos">
 
                 <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
-                <a href="#" class="d-block mb-4 h-80">
-                        <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
-                    </a>
-                <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
-                <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
-                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
-                 <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
-                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
-                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
-                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
-                <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
-                </p>
+                    <a href="#" class="d-block mb-4 h-80">
+                            <img class="img-fluid " src="{% static 'img\Rectangle 5.png' %}" alt="">
+                        </a>
+                    <p class="page-5-body-dot"> <img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt=""> Установка программы Adobe Premiere Pro
+                    <br><img class="img-fluid black-square " src="{% static 'img\Rectangle 13.png' %}" alt="">Знакомство с Adobe Premiere Pro
+                    <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Монтаж видео
+                    <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro 
+                    <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 13.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    <br><img class="img-fluid black-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Установка программы Adobe Premiere Pro
+                    </p>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6 page-5-photo-body">
                 <a href="#" class="d-block mb-4 h-100">
@@ -501,15 +529,6 @@
                                 <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Сертификат по окнчанию обучения
                                 <br><img class="img-fluid yellow-square" src="{% static 'img\Rectangle 21.png' %}" alt="">Возможность работать с командой TALPYN PRODUCTION
                             </p>
-                        
-                            <p class="page-6-part-text-2">
-                                Большая команда профессионалов 
-                            </p>
-
-                            <p class="page-6-part-text-3">
-                                5 лет в индустрии, 1000 реализованных проектов 
-                            </p>
-                       
                           
                     </section>
                 </div>
@@ -656,21 +675,35 @@
 
     <div class = "container-fluid page-8" > 
         <div class="page-8-back">
-            <section class="firstpage-1">
-                <h5 class="page-3-part-topic">Реальные результаты</h5>
-                <div class="row ">
-                    <div class="col-4">
-                     
-                    
+            <section class="page-8-body">
+                <h5 class="page-8-part-topic">Реальные результаты</h5>
+                <div class="row " style="margin-left:8%" style="margin-left:8%">
+                    <div class="col">
+                        <img class="img-fluid page-8-col-1" style="width:221px; height: 112px; " src="{% static 'img\Group 56.png' %}" alt="">
                     </div>
-                    <div class="col-4">
-                       
+                    <div class="col">
+                        <img class="img-fluid page-8-col-1 page-8-col-1-2" style="width:287px; height: 112px; " src="{% static 'img\Group 57.png' %}" alt="">
                     </div>
-                    <div class="col-4">
-                       
+                    <div class="col">
+                        <img class="img-fluid page-8-col-1 page-8-col-1-3" style="width:287px; height: 131px; " src="{% static 'img\Group 59.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="row "  style="margin-left:5%">
+                    <div class="col">
+                        <img class="img-fluid page-8-col-2" style="width:287px; height: 131px; "  src="{% static 'img\Group 60.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid page-8-col-2" style="width:287px; height: 93px;" src="{% static 'img\Group 61.png' %}" alt="">
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid page-8-col-2" style="width:287px; height: 112px;" src="{% static 'img\Group 62.png' %}" alt="">
                     </div>
                 </div>
             </section>
+            <div class="page-8-bottomtext">
+                    <h3 class="page-8-text">Скидка 33% на весь курс. <br> До29 марта</h3>
+                    <img src="{% static 'img\Union 3.png' %}" alt="..." class="img-fluid page-8-union" >
+            </div>
         </div>
     </div>
 
@@ -685,8 +718,8 @@
             <div class="col-12">
               <h2>Our Contacts</h2>
             </div>
-            <div class="col-12 social padding" style="weight:100%; height: 100px;">
-              <a href="#" ><img class="img-fluid  znak znak-1" src="{% static 'img\Image 17.png' %}" alt=""></i></a>
+            <div class="col-12 social padding" >
+              <a href="#" ><img class="img-fluid  znak znak-1" src="{% static 'img\Image 17.png' %}" style="width:120px; height: 120px;" alt=""></i></a>
               <a href="#" ><img class="img-fluid  znak znak-2" src="{% static 'img\Image 18.png' %}" alt=""></a>
               <a href="#" ><img class="img-fluid  znak znak-3" src="{% static 'img\Image 16.png' %}" alt=""></a>
               <a href="#" ><img class="img-fluid  znak znak-4" src="{% static 'img\Image 15.png' %}" alt=""></a>
@@ -696,9 +729,34 @@
     </div>
 
     <footer class="container-fluid page-10">
-        <p class="page-10-text">Использование текстов, изображений и видео с данной страницы без разрешения запрещено. По вопросам заказа и оплаты курсов звоните по телефону +7 000 00 00 с 9:00 до 21:00 в ПН-ВС. г. Алматы, улица Масанчи, 00, офис 000. Служба поддержки: salem@talpyn.kz</p>
+        <p class="page-10-text">Использование текстов, изображений и видео с данной страницы без разрешения запрещено. <br> 
+            По вопросам заказа и оплаты курсов звоните по телефону +7 000 00 00 с 9:00 до 21:00 в ПН-ВС. <br> г. Алматы, улица Масанчи, 00, офис 000. 
+            <br>Служба поддержки: salem@talpyn.kz</p>
     </footer>
 
+    <div class="container-fluid page-11">
+        <div class="container-fluid page-11-back">
+            <div class="page-11-part-1">
+                <span class="page-11-part-1-text-1">
+                    Измените свою жизнь через новые знания
+                </span>
+                <p class="page-11-part-1-text-1"> Курсы от практикующих мастеров своего дела</p>
+            </div>
+            <div class="page-11-part-2">
+                <img src="{% static 'img\Ellipse 2.png' %}" alt="..." class="img-fluid page-11-logo" >
+            </div>
+            <div class="page-11-part-3">
+                <h4 class="page-11-part-3-text-1">
+                    Нурлан Сабуров
+                </h4>
+                <p class="page-11-part-3-text-1"> Владелец продюссерского центра “Название” с опытом более 5 лет</p>
+            </div>
+
+        </div>
+        <div class="container-fluid page-11-back-2">
+            
+        </div>
+    </div">
 
 
    
