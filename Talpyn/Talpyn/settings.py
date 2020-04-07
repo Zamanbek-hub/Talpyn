@@ -73,11 +73,17 @@ WSGI_APPLICATION = 'Talpyn.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
+# elephantsql.com
+# login     : talpynfaq@gmail.com TODO 
+# password  : Akzhol13243 TODO
+DATABASES = { 
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE'    : 'django.db.backends.postgresql',
+        'NAME'      : 'hqhgufhp',
+        'USER'      : 'hqhgufhp',
+        'PASSWORD'  : 'qw4MwcbsnfXS70jMDOrKeRq1jk4le1oY',
+        'HOST'      : 'packy.db.elephantsql.com',
+        'PORT'      : '5432'
     }
 }
 
