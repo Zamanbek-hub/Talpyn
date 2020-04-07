@@ -79,6 +79,7 @@ WSGI_APPLICATION = 'Talpyn.wsgi.application'
 DATABASES = { 
     'default': {
         'ENGINE'    : 'django.db.backends.postgresql',
+        #'ENGINE': 'django.db.backends.postgresql_psycopg2'
         'NAME'      : 'hqhgufhp',
         'USER'      : 'hqhgufhp',
         'PASSWORD'  : 'qw4MwcbsnfXS70jMDOrKeRq1jk4le1oY',
