@@ -32,13 +32,13 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'talpynroot',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -78,14 +78,14 @@ WSGI_APPLICATION = 'Talpyn.wsgi.application'
 # login     : talpynfaq@gmail.com TODO 
 # password  : Akzhol13243 TODO
 # pip install psycopg2-binary --user
-DATABASES = { 
+DATABASES = {
     'default': {
         'ENGINE'    : 'django.db.backends.postgresql',
         #'ENGINE'   : 'django.db.backends.postgresql_psycopg2'
-        'NAME'      : 'hqhgufhp',
-        'USER'      : 'hqhgufhp',
-        'PASSWORD'  : 'qw4MwcbsnfXS70jMDOrKeRq1jk4le1oY',
-        'HOST'      : 'packy.db.elephantsql.com',
+        'NAME'      : 'navirxkr',
+        'USER'      : 'navirxkr',
+        'PASSWORD'  : 'O7h8WkhnfCkLlSXzra957BqV40qXA43Y',
+        'HOST'      : 'rogue.db.elephantsql.com',
         'PORT'      : '5432'
     }
 }
@@ -123,6 +123,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, r'/static')
