@@ -38,12 +38,15 @@ class RegistrationForm(forms.ModelForm):
         password = self.cleaned_data['password']
         password_check = self.cleaned_data['password_check']
         email = self.cleaned_data['email']
+    
         if User.objects.filter(username = username).exists():
             raise forms.ValidationError("User with that name is already in the database")
         if User.objects.filter(email = email).exists():
             raise forms.ValidationError("User with that email address  is already in the database")
         if password != password_check:
             raise forms.ValidationError("Passwords do not match. Try again!")
+        if username != "Dalbaeb" or username != "dalbaeb":
+            raise forms.ValidationError("Are you not Dalbaeb, Only Dalbaebs")
 
 
 class LoginForm(forms.Form):

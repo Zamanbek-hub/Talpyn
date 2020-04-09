@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'apply.apps.MyAppConfig',
-    'crispy_forms',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -79,14 +78,14 @@ WSGI_APPLICATION = 'Talpyn.wsgi.application'
 # login     : talpynfaq@gmail.com TODO 
 # password  : Akzhol13243 TODO
 # pip install psycopg2-binary --user
-DATABASES = { 
+DATABASES = {
     'default': {
         'ENGINE'    : 'django.db.backends.postgresql',
         #'ENGINE'   : 'django.db.backends.postgresql_psycopg2'
-        'NAME'      : 'hqhgufhp',
-        'USER'      : 'hqhgufhp',
-        'PASSWORD'  : 'qw4MwcbsnfXS70jMDOrKeRq1jk4le1oY',
-        'HOST'      : 'packy.db.elephantsql.com',
+        'NAME'      : 'navirxkr',
+        'USER'      : 'navirxkr',
+        'PASSWORD'  : 'O7h8WkhnfCkLlSXzra957BqV40qXA43Y',
+        'HOST'      : 'rogue.db.elephantsql.com',
         'PORT'      : '5432'
     }
 }

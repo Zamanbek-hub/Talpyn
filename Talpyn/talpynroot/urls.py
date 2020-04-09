@@ -6,6 +6,6 @@ from django.urls import reverse_lazy
 urlpatterns = [
     path('',                views.index,            name='index'),
     path('temp/',           views.temp,             name='temp'),
-    path('authorization',   views.authorization,    name = 'authorization'),
-    path('registration',    views.registration,     name = 'registration')
+    path('authorization/',   views.authorization,    name = 'authorization'),
+    path('registration/',    views.registration,     name = 'registration')
 ]
