@@ -8,6 +8,9 @@ from .forms import *
 def index(request):
     return render(request, 'talpynroot/index.html')
 
+def lesson(request):
+    return render(request, 'talpynroot/lesson.html')
+
 def temp(request):
     return render(request, 'talpynroot/temp.html')
 
