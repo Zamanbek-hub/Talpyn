@@ -3,10 +3,12 @@ from django import forms
 from django.forms import ModelForm
 from .models import *
 
-class ClientForm(forms.ModelForm):
-    class Meta():
-        model   = Client
-        fields  = ('img',)
+
+# TODO NameError: name 'Client' is not defined ошиба беріп тұр
+# class ClientForm(forms.ModelForm):
+#     class Meta():
+#         model   = Client
+#         fields  = ('img','course','phone','sex','status','courses',)
 
 class RegistrationForm(forms.ModelForm):
     password_check=forms.CharField(widget=forms.PasswordInput)
