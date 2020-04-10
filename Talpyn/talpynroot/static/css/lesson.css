@@ -1,0 +1,42 @@
+
+body {
+  background-color: lightblue;
+}
+#navb{
+	background-color: #FFE600;
+	/*padding-left: 75px;*/
+	left: 0px;
+	top: 0px;
+	width: 1439px;
+	height: 50px;
+}
+
+
+
+footer {
+	height: 122px;
+	top: 1030px;
+	background: #FFFFFF;
+}
+
+#diana{
+	padding-left: 300px;
+}
+
+#diana2{
+	padding-left: 100px;
+}
+
+#diana a{
+	height: 30px;
+}
+
+#vv{
+	height: 100px;
+	width: 1440px;
+	background-color: white;
+}
+
+#diana3{
+	background-color: #E5E5E5;
+}
