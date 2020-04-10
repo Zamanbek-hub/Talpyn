@@ -82,9 +82,9 @@ DATABASES = {
     'default': {
         'ENGINE'    : 'django.db.backends.postgresql',
         #'ENGINE'   : 'django.db.backends.postgresql_psycopg2'
-        'NAME'      : 'navirxkr',
-        'USER'      : 'navirxkr',
-        'PASSWORD'  : 'O7h8WkhnfCkLlSXzra957BqV40qXA43Y',
+        'NAME'      : 'cxtenwdr',
+        'USER'      : 'cxtenwdr',
+        'PASSWORD'  : 'aCtUyKKMEv6Os194jwIW8I0TxlYYtega',
         'HOST'      : 'rogue.db.elephantsql.com',
         'PORT'      : '5432'
     }
