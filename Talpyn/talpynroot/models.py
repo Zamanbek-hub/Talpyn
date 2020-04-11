@@ -3,8 +3,31 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 from datetime import datetime, timedelta
 
+import secrets
+import numpy as np
 
-# Create your models here.
+
+def generate_token(tokens:set(), n:int):
+    if len(tokens) == n:
+        return 
+    for i in range(n):
+        tokens.add(secrets.token_urlsafe())
+
+    #check for n unique tokens
+    return generate_token(tokens, len(tokens) - n)
+
+
+def add_token(n:int, course_id:int):
+    new_tokens = set()
+    generate_token(new_tokens, n)
+
+    db_tokens = Token.objects.all()
+    print(type(db_tokens))
+    couples = np.intersect1d(new_tokens, db_tokens)
+    print(len(new_tokens), '-----------', couples)
+
+
+
 
 class Course(models.Model):
     course_name = models.CharField('Course', max_length = 100,)
@@ -13,8 +36,27 @@ class Course(models.Model):
     new_price = models.PositiveIntegerField()
     date = models.DateTimeField('date published')
 
+    TOKEN_CHOICES = [
+        (50, '50'),
+        (100, '100'),
+        (200, '200'),
+        (500, '500'),
+        (1000, '1000'),
+    ]
+
+    tokens = models.PositiveIntegerField(
+        choices=TOKEN_CHOICES,
+        default = 50
+    )
+
+    def save(self, *args, **kwargs): 
+        super(Course, self).save(*args, **kwargs)
+        add_token(self.tokens,self.id)
+
+
     def __str__(self):
         return self.course_name
+
 
 class Client(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -35,9 +77,6 @@ class Client(models.Model):
     def __str__(self):
         return self.user.username
 
-
-
-
 class Lesson(models.Model):
     lesson_name = models.CharField('Lesson', max_length = 100,)
     course =  models.ForeignKey(Course, on_delete=models.CASCADE)
@@ -56,7 +95,7 @@ class Video(models.Model):
         return self.video_name
 
 class Token(models.Model):
-    token =  models.CharField('Course', max_length = 30, unique=True)
+    token =  models.CharField('Course', max_length = 50, unique=True)
     recerved = models.BooleanField(default=False)
     course =  models.ForeignKey(Course, on_delete=models.CASCADE)
 
