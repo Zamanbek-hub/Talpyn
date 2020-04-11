@@ -1,12 +1,13 @@
-from django.contrib.auth.models import User
 from django import forms
 from django.forms import ModelForm
 from .models import *
 
+
+
 class ClientForm(forms.ModelForm):
     class Meta():
         model   = Client
-        fields  = ('img',)
+        fields  = ('img','course','phone','sex','status','courses',)
 
 class RegistrationForm(forms.ModelForm):
     password_check=forms.CharField(widget=forms.PasswordInput)
