@@ -3,7 +3,10 @@ from django.http import Http404, HttpResponseRedirect
 from django.urls import reverse, reverse_lazy
 from django.contrib.auth import login, authenticate
 from .forms import *
+from .models import *
 # Create your views here.
+
+
 
 def index(request):
     return render(request, 'talpynroot/index.html')
@@ -60,3 +63,6 @@ def registration(request):
     except:
         raise Http404('Something maybe you entered the data incorrectly')
         
+
+
+
